@@ -1,6 +1,7 @@
 require "test_helper"
 
 describe Movie do
+  describe "validations" do
     it "can instatiate a movie" do
       movie = movies(:blacksmith)
 
@@ -26,5 +27,5 @@ describe Movie do
       
       expect(result).must_equal false
     end
-
+  end
 end
